@@ -1,0 +1,12 @@
+{
+    "ID": "849438934DC54A5B860A528CCDBA6D65",
+    "ActionKeyword": "rpc",
+    "Name": "FLowRPC",
+    "Description": "A plugin for creating and running customm rich presences from flow",
+    "Author": "DiekoMA",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/DiekoMA/Flow.Launcher.Plugin.FLowRPC",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.FLowRPC.dll"
+}

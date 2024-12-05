@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <AssemblyName>Flow.Launcher.Plugin.FLowRPC</AssemblyName>
+        <PackageId>Flow.Launcher.Plugin.FLowRPC</PackageId>
+        <Authors>DiekoMA</Authors>
+        <PackageProjectUrl>https://github.com/DiekoMA/Flow.Launcher.Plugin.FLowRPC</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/DiekoMA/Flow.Launcher.Plugin.FLowRPC</RepositoryUrl>
+        <PackageTags>flow-launcher flow-plugin</PackageTags>
+        <UseWpf>true</UseWpf>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include=".github\main.yml" />
+        <Content Include="plugin.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview3" />
+        <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+        <PackageReference Include="Flow.Launcher.Plugin" Version="4.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\" />
+    </ItemGroup>
+
+</Project>
